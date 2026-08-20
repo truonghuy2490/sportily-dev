@@ -1,3 +1,18 @@
 spring:
   application:
     name: sportily
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/sportily_db
+    username: sportily
+    password: sportily
+
+    jpa:
+      hibernate:
+        ddl-auto: none
+
+    flyway:
+      enabled: true
+
+  server:
+    port: 8081s
